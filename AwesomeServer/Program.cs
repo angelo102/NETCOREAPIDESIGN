@@ -1,36 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using AwesomeSauce;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Server;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using System;
 
 namespace AwesomeServer
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            BuildWebHost(args).Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
-
-        //public static IWebHostBuilder UseAwesomeServer(this IWebHostBuilder hostBuilder, Action<AwesomeServerOptions> options)
-        //{
-        //    return hostBuilder.ConfigureServices(services =>
-        //    {
-        //        services.Configure(options);
-        //        services.AddSingleton<IServer, AwesomeServer>();
-        //    });
-        //}
+                .UseAwesomeServer(o => o.FolderPath = @"c:\sandbox\in")
+                .UseStartup<Startup>()
+                .Build();
     }
-
 }

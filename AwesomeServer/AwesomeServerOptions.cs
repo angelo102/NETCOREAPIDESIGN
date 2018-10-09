@@ -1,4 +1,4 @@
-﻿namespace AwesomeSauce
+﻿namespace AwesomeServer
 {
     public class AwesomeServerOptions
     {

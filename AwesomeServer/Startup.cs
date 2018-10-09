@@ -11,23 +11,21 @@ namespace AwesomeServer
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services)
+        public void Configure(IApplicationBuilder app)
         {
-        }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
+            app.MapWhen(c => c.Request.Path == "/foo/bar", config =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.Run(async (context) =>
+                config.Run(async (context) =>
+                {
+                    context.Response.StatusCode = 200;
+                    await context.Response.WriteAsync("Hello World!");
+                });
+            })
+            .Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                context.Response.StatusCode = 404;
+                await context.Response.WriteAsync("Not Found");
             });
         }
     }

@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AwesomeSauce
+namespace AwesomeServer
 {
     internal class AwesomeFolderWatcher<TContext>
     {
@@ -34,6 +34,12 @@ namespace AwesomeSauce
 
             };
             Task.Run(() => watcher.WaitForChanged(WatcherChangeTypes.All));
+      
+        }
+
+        public void Dispose()
+        {
+            this.watcher.Dispose();
         }
     }
 }

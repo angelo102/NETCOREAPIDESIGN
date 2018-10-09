@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Http.Features;
 
-namespace AwesomeSauce
+namespace AwesomeServer
 {
     internal class AwesomeHttpContext : HttpContext
     {
@@ -23,7 +23,8 @@ namespace AwesomeSauce
 
         public override HttpResponse Response { get; }
 
-    public override ConnectionInfo Connection => throw new NotImplementedException();
+        //public override ConnectionInfo Connection => throw new NotImplementedException();
+        public override ConnectionInfo Connection => throw new NotImplementedException();
 
         public override WebSocketManager WebSockets => throw new NotImplementedException();
 
