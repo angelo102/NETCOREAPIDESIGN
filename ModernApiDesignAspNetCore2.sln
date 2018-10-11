@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4NumberCheckerMiddle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4Routing", "Chapter4Routing\Chapter4Routing.csproj", "{639955E6-8B7C-489C-B75F-56D22718C6D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeHostedService", "AwesomeHostedService\AwesomeHostedService.csproj", "{470D78E8-49FD-413D-8F54-AC6298E51339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{639955E6-8B7C-489C-B75F-56D22718C6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{639955E6-8B7C-489C-B75F-56D22718C6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{639955E6-8B7C-489C-B75F-56D22718C6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470D78E8-49FD-413D-8F54-AC6298E51339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470D78E8-49FD-413D-8F54-AC6298E51339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470D78E8-49FD-413D-8F54-AC6298E51339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470D78E8-49FD-413D-8F54-AC6298E51339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
