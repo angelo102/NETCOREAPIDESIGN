@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwesomeSauce", "AwesomeSauc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwesomeServer", "AwesomeServer\AwesomeServer.csproj", "{9CDFACC2-EF55-4EAF-B833-C91517BC37B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4NumberCheckerMiddleware", "Chapter4NumberCheckerMiddleware\Chapter4NumberCheckerMiddleware.csproj", "{85510BB5-27DD-4054-AB43-5E9D30CCE495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter4NumberCheckerMiddleware", "Chapter4NumberCheckerMiddleware\Chapter4NumberCheckerMiddleware.csproj", "{85510BB5-27DD-4054-AB43-5E9D30CCE495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4Routing", "Chapter4Routing\Chapter4Routing.csproj", "{639955E6-8B7C-489C-B75F-56D22718C6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter4Routing", "Chapter4Routing\Chapter4Routing.csproj", "{639955E6-8B7C-489C-B75F-56D22718C6D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeHostedService", "AwesomeHostedService\AwesomeHostedService.csproj", "{470D78E8-49FD-413D-8F54-AC6298E51339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwesomeHostedService", "AwesomeHostedService\AwesomeHostedService.csproj", "{470D78E8-49FD-413D-8F54-AC6298E51339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5CustomControllerConvention", "Chapter5CustomControllerConvention\Chapter5CustomControllerConvention.csproj", "{73890732-8AEC-49C2-BA24-BCA048600881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{470D78E8-49FD-413D-8F54-AC6298E51339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{470D78E8-49FD-413D-8F54-AC6298E51339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{470D78E8-49FD-413D-8F54-AC6298E51339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73890732-8AEC-49C2-BA24-BCA048600881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73890732-8AEC-49C2-BA24-BCA048600881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73890732-8AEC-49C2-BA24-BCA048600881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73890732-8AEC-49C2-BA24-BCA048600881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
