@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Api.People
 {
-    public class NameApi
+    public class NamesApi
     {
         private readonly IPeopleRepository people;
 
-        public NameApi(IPeopleRepository people)
+        public NamesApi(IPeopleRepository people)
         {
             this.people = people;
         }
